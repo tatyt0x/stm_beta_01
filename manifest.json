@@ -1,0 +1,7 @@
+{
+  "name": "stm_beta_01",
+  "short_name": "stm_beta_01",
+  "description": "asd",
+  "start_url": "/",
+  "display": "standalone"
+}
