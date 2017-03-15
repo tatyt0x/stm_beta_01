@@ -1,10 +1,24 @@
 <dom-module id="mia-reja">
     <template>
         <p>Hola Mundo</p>
+        <span>{{legajo}}</span>
+        <span>{{apellido}}</span>
+        <span>{{nombre}}</span>
     </template>
     <script>
         Polymer({
-           is: 'mia-reja'
+           is: 'mia-reja',
+           properties: {
+               legajo: Number,
+               apellido: String,
+               nombre: String
+           },
+           ready: function(){
+               console.log("log de mi reja");
+               this.legajo = 3242;
+               this.apellido = "Sebas";
+               this.nombre = "Taty";
+           }
         });
     </script>
 </dom-module>
