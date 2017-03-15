@@ -1,4 +1,9 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+
+
+<link rel="import" href="../../mia_comp/mia-reja/mia-reja.html">
 
 <dom-module id="stm_beta_01-app">
   <template>
@@ -7,7 +12,16 @@
         display: block;
       }
     </style>
+
+      <app-header reveals>
+        <app-toolbar>
+          <div main-title>App name</div>
+        </app-toolbar>
+      </app-header>
+
     <h2>Hello [[prop1]]</h2>
+
+    <mia-reja>asd</mia-reja>
   </template>
 
   <script>
